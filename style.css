@@ -1,0 +1,134 @@
+
+        body {
+   font-family: 'Roboto', sans-serif;
+            margin: 0px;
+            padding: 0px;
+            -webkit-transition: background-image 0.2s ease-in-out;
+transition: background-image 0.2s ease-in-out;
+}
+            .headerC{
+                width:100%;background:#66CC00;padding:10px 0;text-align:center;
+            }
+
+            .waterBG{
+             background:url('images/water.jpg');background-size:cover;   
+            }
+            .cityRoad{
+             background:url('images/road.jpg');background-size:cover;   
+            }
+            
+            .greenMountains{
+background:url('images/green-mountains.jpg');background-size:cover;   
+            }
+            
+            .shop{
+background:url('images/shop.jpg');background-size:cover;   
+            }
+            
+            .success{
+background:url('images/success.jpg');background-size:cover;   
+                
+            }
+            
+            
+#container {
+    width:680px;
+    margin:auto;
+    padding: 20px;
+    border-radius:5px;
+    box-shadow: 0px 0px 5px #ccc;
+    min-height: 400px;
+    background: #fff;
+}
+            
+            @media screen and (max-width: 680px) {
+   #container {
+    width:100%;
+}
+}
+
+            
+            .question input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+.bee{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/16/9/enhanced/webdr09/enhanced-buzz-768-1413466971-1.jpg);}
+.shark{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/16/9/enhanced/webdr11/enhanced-buzz-1858-1413467065-16.jpg);}
+.bear{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/16/9/enhanced/webdr08/enhanced-buzz-18695-1413467110-38.jpg);}
+.sparrow{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/16/9/enhanced/webdr04/enhanced-buzz-12005-1413467194-0.jpg);}
+.monkey{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/16/9/enhanced/webdr08/enhanced-buzz-18673-1413467253-26.jpg);}
+.human{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr10/enhanced-buzz-21284-1413556208-0.jpg);}
+
+.skating{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr11/enhanced-buzz-23368-1413555753-4.jpg);}
+.scuba{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr09/enhanced-buzz-23097-1413555791-1.jpg);}
+.walk{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr04/enhanced-buzz-18423-1413555837-9.jpg);}
+.cooking{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr11/enhanced-buzz-23465-1413555874-3.jpg);}
+.cycling{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr08/enhanced-buzz-3375-1413555918-3.jpg);}
+.shopping{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr11/enhanced-buzz-23390-1413556018-11.jpg);}
+
+.windmill{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr10/enhanced-buzz-21294-1413556472-1.jpg);}
+.treehouse{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr10/enhanced-buzz-27251-1413556510-0.jpg);}
+.flowers{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr11/enhanced-buzz-26204-1413556551-1.jpg);}
+.snowmountain{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr04/enhanced-buzz-13806-1413556650-8.jpg);}
+.attic{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr08/enhanced-buzz-4600-1413556706-0.jpg);}
+.flora{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr09/enhanced-buzz-22420-1413556759-17.jpg);}
+            
+            
+            
+.shirt{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr05/enhanced-buzz-23991-1413557793-6.jpg);}
+.girl{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr09/enhanced-buzz-23589-1413557847-18.jpg);}
+.windmill2{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr09/enhanced-buzz-22258-1413557904-16.jpg);}
+.sailingboat{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr02/enhanced-buzz-30658-1413557940-11.jpg);}
+.vegetables{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/11/enhanced/webdr08/enhanced-buzz-3405-1413558006-1.jpg);}
+.trolly{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/11/enhanced/webdr08/enhanced-buzz-3341-1413558072-16.jpg);}
+            
+
+            
+            
+      
+            
+            
+.question input:active +.imgEffect{opacity: .9;}
+.question input:checked +.imgEffect{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+            .fa-times{
+                color:#f00;
+                font-size: 20px;
+            }    
+            .fa-check{
+                color: #66CC00;
+                font-size: 20px;
+            }
+            .score{
+                font-size: 20px;
+            }
+            
+.imgEffect{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:180px;height:180px;
+    margin: 10px 15px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.5) grayscale(1) opacity(.9);
+       -moz-filter: brightness(1.5) grayscale(1) opacity(.9);
+            filter: brightness(1.5) grayscale(1) opacity(.9);
+}
+.imgEffect:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+            h2{
+                font-size: 18px;
+                margin: 8px 0 0 0px;
+                padding: 0px;
+            }           
