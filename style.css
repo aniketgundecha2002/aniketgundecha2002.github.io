@@ -11,22 +11,22 @@ transition: background-image 0.2s ease-in-out;
             }
 
             .waterBG{
-             background:url('images/water.jpg');background-size:cover;   
+             background:url('images/water.jpg') center center no-repeat ;background-size:cover;   
             }
             .cityRoad{
-             background:url('images/road.jpg');background-size:cover;   
+             background:url('images/road.jpg') center center no-repeat;background-size:cover;   
             }
             
             .greenMountains{
-background:url('images/green-mountains.jpg');background-size:cover;   
+background:url('images/green-mountains.jpg') center center no-repeat;background-size:cover;   
             }
             
             .shop{
-background:url('images/shop.jpg');background-size:cover;   
+background:url('images/shop.jpg') center center no-repeat;background-size:cover;   
             }
             
             .success{
-background:url('images/success.jpg');background-size:cover;   
+background:url('images/success.jpg') center center no-repeat;background-size:cover;   
                 
             }
             
