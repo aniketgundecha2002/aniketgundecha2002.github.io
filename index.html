@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Green Peace Quiz Assignment</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+        <link rel="shortcut icon" type="image/ico" href="http://www.greenpeace.org/international/Templates/Planet3/Styles/Images/Icons/favicon.ico" />
+
+	</head>
+	<body class="waterBG">
+        <div class="headerC">
+            
+        <img src="http://www.greenpeace.org/international/Templates/Planet3/Styles/images/logo.gif" />
+        
+        </div>
+        <br /><br />
+        
+		<div id='container'>
+        <div class="pull-right">
+        <button class="btn btn-success nextBTN" disabled>
+        NEXT    
+        </button>
+            
+        <button class="btn btn-danger final" style="display:none">
+        CALCULATE RESULTS    
+        </button>    
+        </div>    
+        
+        <div class="question" id="question1">
+        <div class="pull-left">
+        <h2>Which animal is shark from the photos given below ?</h2>
+        </div>
+        <div class="clearfix"></div>    
+        <hr />
+        
+        <input id="bee" class="hidden" name="question1" value="bee" type="radio">
+        <label class="imgEffect bee" for="bee"></label>
+        <input id="shark" class="hidden" name="question1" value="shark" type="radio">
+        <label class="imgEffect shark" for="shark"></label>
+        <input id="bear" class="hidden" name="question1" value="bear" type="radio">
+        <label class="imgEffect bear" for="bear"></label>
+        <div class="clearfix"></div>        
+        <input id="sparrow" class="hidden" name="question1" value="sparrow" type="radio">
+        <label class="imgEffect sparrow" for="sparrow"></label>
+        <input id="monkey" class="hidden" name="question1" value="monkey" type="radio">
+        <label class="imgEffect monkey" for="monkey"></label>
+        <input id="human" class="hidden" name="question1" value="human" type="radio">
+        <label class="imgEffect human" for="human"></label>
+            
+            
+        </div>
+            
+            
+        <div class="question" id="question2" style="display:none">
+        <div class="pull-left">
+        <h2>Which activity depicts cycling ?</h2>
+        </div>
+        <div class="clearfix"></div>    
+        <hr />
+        
+        <input id="skating" class="hidden" name="question2" value="skating" type="radio">
+        <label class="imgEffect skating" for="skating"></label>
+        <input id="scuba" class="hidden" name="question2" value="scuba" type="radio">
+        <label class="imgEffect scuba" for="scuba"></label>
+        <input id="walk" class="hidden" name="question2" value="walk" type="radio">
+        <label class="imgEffect walk" for="walk"></label>
+        <div class="clearfix"></div>        
+        <input id="cooking" class="hidden" name="question2" value="cooking" type="radio">
+        <label class="imgEffect cooking" for="cooking"></label>
+        <input id="cycling" class="hidden" name="question2" value="cycling" type="radio">
+        <label class="imgEffect cycling" for="cycling"></label>
+        <input id="shopping" class="hidden" name="question2" value="shopping" type="radio">
+        <label class="imgEffect shopping" for="shopping"></label>
+            
+            
+        </div> 
+            
+            
+        <div class="question" id="question3" style="display:none">
+        <div class="pull-left">
+        <h2>Which is a windmill ?</h2>
+        </div>
+        <div class="clearfix"></div>    
+        <hr />
+        
+        <input id="windmill" class="hidden" name="question3" value="windmill" type="radio">
+        <label class="imgEffect windmill" for="windmill"></label>
+        <input id="treehouse" class="hidden" name="question3" value="treehouse" type="radio">
+        <label class="imgEffect treehouse" for="treehouse"></label>
+        <input id="flowers" class="hidden" name="question3" value="flowers" type="radio">
+        <label class="imgEffect flowers" for="flowers"></label>
+        <input id="snowmountain" class="hidden" name="question3" value="snowmountain" type="radio">
+        <label class="imgEffect snowmountain" for="snowmountain"></label>
+        <input id="attic" class="hidden" name="question3" value="attic" type="radio">
+        <label class="imgEffect attic" for="attic"></label>
+        <input id="flora" class="hidden" name="question3" value="flora" type="radio">
+        <label class="imgEffect flora" for="flora"></label>
+       
+            
+            
+        </div> 
+            
+        <div class="question" id="question4" style="display:none">
+        <div class="pull-left">
+        <h2>Which is a shirt ?</h2>
+        </div>
+        <div class="clearfix"></div>    
+        <hr />
+        
+        <input id="shirt" class="hidden" name="question4" value="shirt" type="radio">
+        <label class="imgEffect shirt" for="shirt"></label>
+        <input id="girl" class="hidden" name="question4" value="girl" type="radio">
+        <label class="imgEffect girl" for="girl"></label>
+        <input id="windmill2" class="hidden" name="question4" value="windmill2" type="radio">
+        <label class="imgEffect windmill2" for="windmill2"></label>
+        <input id="sailingboat" class="hidden" name="question4" value="sailingboat" type="radio">
+        <label class="imgEffect sailingboat" for="sailingboat"></label>
+        <input id="vegetables" class="hidden" name="question4" value="vegetables" type="radio">
+        <label class="imgEffect vegetables" for="vegetables"></label>
+        <input id="trolly" class="hidden" name="question4" value="trolly" type="radio">
+        <label class="imgEffect trolly" for="trolly"></label>
+       
+            
+            
+        </div> 
+            
+        <div class="result" id="result" style="display:none">
+        <div class="pull-left">
+        <h2>Here's how you performed</h2>
+        </div>
+        <div class="clearfix"></div>    
+        <hr />
+        
+        <div class="col-md-8">
+        Q1 .  Which animal is shark from the photos given below ?   
+        </div>
+        <div class="col-md-4 answer1">
+        <i class="fa fa-times"></i>    
+        </div>    
+        <div class="clearfix"></div>       
+        <hr />
+        <div class="col-md-8">
+        Q2 .  Which activity depicts cycling ?
+        </div>
+        <div class="col-md-4 answer2">
+           <i class="fa fa-times"></i>     
+        </div>    
+        <div class="clearfix"></div>       
+        <hr />
+        <div class="col-md-8">
+        Q3 .  Which is a windmill ?  
+        </div>
+        <div class="col-md-4 answer3">
+         <i class="fa fa-times"></i>       
+        </div>    
+        <div class="clearfix"></div>       
+        <hr />
+        <div class="col-md-8">
+        Q4 .  Which is a shirt ?  
+        </div>
+        <div class="col-md-4 answer4">
+         <i class="fa fa-times"></i>       
+        </div>    
+        <div class="clearfix"></div>       
+        <hr />
+            
+        <br />
+        <center>
+        <div class="score"></div>    
+        </center>        
+        <br />
+        <center>
+        <button class="btn btn-success" onclick="window.location.reload()">Re - Test</button>
+        </center>    
+            
+        </div>     
+            
+    	</div>
+
+		<!-- Just caching the images on page load so that the body transition looks smoother  -->
+		<img src="http://sensation-jp.com/wp/wp-content/uploads/2015/09/tom.jpg" class="hidden" />
+        <img src="http://www.zastavki.com/pictures/originals/2014/Nature___Mountains_____Green_mountains_and_the_river_082642_.jpg" class="hidden" />
+        <img src="http://www.thehopewellrocks.ca/wp-content/uploads/2011/05/Gift_Shop_07.jpg" class="hidden" />
+        <img src="http://niefert.net/niefertcom/wp-content/uploads/2014/03/04_background.jpg" class="hidden" />
+        
+        <style>
+        body {
+   font-family: 'Roboto', sans-serif;
+            margin: 0px;
+            padding: 0px;
+            -webkit-transition: background-image 0.2s ease-in-out;
+transition: background-image 0.2s ease-in-out;
+}
+            .headerC{
+                width:100%;background:#66CC00;padding:10px 0;text-align:center;
+            }
+
+            .waterBG{
+             background:url('https://img.clipartfest.com/daeee37e0064e759cb9094a8be30deab_ocean-water-background-water-background-clipart-large_1920-1200.jpeg');background-size:cover;   
+            }
+            .cityRoad{
+             background:url('http://sensation-jp.com/wp/wp-content/uploads/2015/09/tom.jpg');background-size:cover;   
+            }
+            
+            .greenMountains{
+background:url('http://www.zastavki.com/pictures/originals/2014/Nature___Mountains_____Green_mountains_and_the_river_082642_.jpg');background-size:cover;   
+            }
+            
+            .shop{
+background:url('http://www.thehopewellrocks.ca/wp-content/uploads/2011/05/Gift_Shop_07.jpg');background-size:cover;   
+            }
+            
+            .success{
+background:url('http://niefert.net/niefertcom/wp-content/uploads/2014/03/04_background.jpg');background-size:cover;   
+                
+            }
+            
+            
+#container {
+    width:680px;
+    margin:auto;
+    padding: 20px;
+    border-radius:5px;
+    box-shadow: 0px 0px 5px #ccc;
+    min-height: 400px;
+    background: #fff;
+}
+            
+            @media screen and (max-width: 680px) {
+   #container {
+    width:100%;
+}
+}
+
+            
+            .question input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+.bee{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/16/9/enhanced/webdr09/enhanced-buzz-768-1413466971-1.jpg);}
+.shark{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/16/9/enhanced/webdr11/enhanced-buzz-1858-1413467065-16.jpg);}
+.bear{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/16/9/enhanced/webdr08/enhanced-buzz-18695-1413467110-38.jpg);}
+.sparrow{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/16/9/enhanced/webdr04/enhanced-buzz-12005-1413467194-0.jpg);}
+.monkey{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/16/9/enhanced/webdr08/enhanced-buzz-18673-1413467253-26.jpg);}
+.human{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr10/enhanced-buzz-21284-1413556208-0.jpg);}
+
+.skating{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr11/enhanced-buzz-23368-1413555753-4.jpg);}
+.scuba{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr09/enhanced-buzz-23097-1413555791-1.jpg);}
+.walk{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr04/enhanced-buzz-18423-1413555837-9.jpg);}
+.cooking{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr11/enhanced-buzz-23465-1413555874-3.jpg);}
+.cycling{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr08/enhanced-buzz-3375-1413555918-3.jpg);}
+.shopping{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr11/enhanced-buzz-23390-1413556018-11.jpg);}
+
+.windmill{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr10/enhanced-buzz-21294-1413556472-1.jpg);}
+.treehouse{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr10/enhanced-buzz-27251-1413556510-0.jpg);}
+.flowers{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr11/enhanced-buzz-26204-1413556551-1.jpg);}
+.snowmountain{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr04/enhanced-buzz-13806-1413556650-8.jpg);}
+.attic{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr08/enhanced-buzz-4600-1413556706-0.jpg);}
+.flora{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr09/enhanced-buzz-22420-1413556759-17.jpg);}
+            
+            
+            
+.shirt{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr05/enhanced-buzz-23991-1413557793-6.jpg);}
+.girl{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr09/enhanced-buzz-23589-1413557847-18.jpg);}
+.windmill2{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr09/enhanced-buzz-22258-1413557904-16.jpg);}
+.sailingboat{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/10/enhanced/webdr02/enhanced-buzz-30658-1413557940-11.jpg);}
+.vegetables{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/11/enhanced/webdr08/enhanced-buzz-3405-1413558006-1.jpg);}
+.trolly{background-image:url(https://img.buzzfeed.com/buzzfeed-static/static/2014-10/17/11/enhanced/webdr08/enhanced-buzz-3341-1413558072-16.jpg);}
+            
+
+            
+            
+      
+            
+            
+.question input:active +.imgEffect{opacity: .9;}
+.question input:checked +.imgEffect{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+            .fa-times{
+                color:#f00;
+                font-size: 20px;
+            }    
+            .fa-check{
+                color: #66CC00;
+                font-size: 20px;
+            }
+            .score{
+                font-size: 20px;
+            }
+            
+.imgEffect{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:180px;height:180px;
+    margin: 10px 15px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.5) grayscale(1) opacity(.9);
+       -moz-filter: brightness(1.5) grayscale(1) opacity(.9);
+            filter: brightness(1.5) grayscale(1) opacity(.9);
+}
+.imgEffect:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+            h2{
+                font-size: 18px;
+                margin: 8px 0 0 0px;
+                padding: 0px;
+            }           
+
+    
+        </style>
+   <script>
+   var question = 1;
+       
+    $(document).ready(function(e){
+       $('.imgEffect').on('click',function(e){
+           $('.nextBTN').removeAttr('disabled');
+           if(question==4){
+           $('.final').removeAttr('disabled');
+           }
+       }) 
+        
+       $('.nextBTN').on('click',function(e){
+           question++;
+           if(question==2){
+               $('body').addClass('cityRoad');
+           }
+           if(question==3){
+               $('body').addClass('greenMountains');
+           }
+           
+           if(question==4){
+               $('body').addClass('shop');
+               $(this).hide();
+               $('.final').show();
+           }
+           
+           $(this).attr('disabled','true');
+           $('.final').attr('disabled','true');
+           
+           $('.question').each(function(e){
+              $(this).hide(); 
+           });    
+           
+           var className = '#question'+question;
+           $(className).show();
+           
+       }) 
+        
+        $('.final').on('click',function(e){
+             $('body').addClass('success');
+            var answers = 0;
+           $('.question').each(function(e){
+              $(this).hide(); 
+           });
+            
+            
+           if($('input[name=question1]:checked').val() == 'shark'){
+              $('.answer1').html('<i class="fa fa-check"></i>');
+               answers++
+           }  
+           if($('input[name=question2]:checked').val() == 'cycling'){
+              $('.answer2').html('<i class="fa fa-check"></i>');
+               answers++
+           }  
+           if($('input[name=question3]:checked').val() == 'windmill'){
+              $('.answer3').html('<i class="fa fa-check"></i>');
+               answers++
+           }  
+           if($('input[name=question4]:checked').val() == 'shirt'){
+              $('.answer4').html('<i class="fa fa-check"></i>');
+               answers++
+           } 
+            
+            $('.score').html('You have scored '+answers+'/4');    
+            
+           $(this).hide();
+           $("#result").show();    
+            
+        });
+        
+        
+    });   
+       
+   </script>     
+        
+	</body>
+</html>
