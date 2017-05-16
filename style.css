@@ -33,7 +33,7 @@ background:url('images/green-mountains.jpg') no-repeat center center fixed;-webk
             }
             
             .shop{
-background:url('images/shop.jpg') no-repeat center center fixed no-repeat center center fixed;-webkit-background-size: cover;
+background:url('images/shop.jpg') no-repeat center center fixed;-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;  
