@@ -1,0 +1,1420 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url(fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url(fonts/Montserrat-SemiBold.ttf);
+}
+
+.menu-wrapper {
+  display: flex;
+  /* gap: 20px; */
+  justify-content: space-between;
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+  height: 100px;
+}
+
+.scrolled {
+  background-color: #fff;
+  -webkit-box-shadow: 0 8px 6px -6px white;
+  -moz-box-shadow: 0 8px 6px -6px white;
+  box-shadow: 0 8px 6px -6px white;
+}
+
+@media (max-width: 991px) {
+  .menu-wrapper {
+    flex-wrap: wrap;
+  }
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.orange-icon {
+  aspect-ratio: 1.33;
+  object-fit: auto;
+  object-position: center;
+  width: 106px;
+  fill: #ef5325;
+  align-self: start;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo-img {
+  aspect-ratio: 4.17;
+  object-fit: auto;
+  object-position: center;
+  width: fit-content;
+  align-self: end;
+  margin-top: 24px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.sync-button {
+  justify-content: center;
+  border-radius: 100px;
+  background-color: #f05023;
+  align-self: end;
+  margin-top: 26px;
+  color: #f5f8fa;
+  padding: 16px 20px;
+  font: 500 19px Montserrat, sans-serif;
+  cursor: pointer;
+  margin-bottom: 10px;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.custom-conatiner {
+  padding: 0px 120px;
+  /* margin: 0px 30px; */
+}
+a {
+  text-decoration: none;
+}
+/* first-section-banner */
+.first-section-banner {
+  width: 100%;
+  /* background-image: url(asstes/Synclariti\ Banner-09.png); */
+  background-image: url(asstes/Web\ Banner\ 1st.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+  object-fit: contain;
+  background-size: cover;
+}
+
+.hero-info {
+  width: 40%;
+  padding-top: 18.5%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero-heading {
+  font-size: 33px;
+  color: #0e0e0e;
+  font-family: Montserrat-Medium;
+}
+
+.hero-heading span {
+  color: #00aeef;
+}
+
+.hero-desc {
+  color: #4e4e4e;
+  font-family: Montserrat-Regular;
+  font-size: 18px;
+  min-width: 810px;
+}
+
+.solution-section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000039;
+}
+
+.solution-section-wrapper {
+  background-color: #ffffff;
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: -8%;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.soultion-heading {
+  font-size: 30px;
+  color: #0e0e0e;
+  font-family: Montserrat-Medium;
+}
+
+.solution-info {
+  font-size: 21px;
+  color: #00aeef;
+  font-family: Montserrat-Medium;
+}
+
+.solution-multi-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: 4rem;
+}
+.solution-multi-wrapper div {
+  display: flex;
+  flex-direction: column;
+  justify-content: cente1;
+  align-items: center;
+  gap: 1rem;
+  width: 200px;
+  /* height: 150px; */
+  /* border: 2px solid red; */
+  img {
+    width: 80px;
+  }
+}
+.solution-multi-wrapper div span {
+  color: black;
+  line-height: 26px;
+  font-family: Montserrat-Medium;
+}
+.sync-to {
+  cursor: pointer;
+  border: none;
+  border-radius: 100px;
+  background-color: #f05023;
+  align-self: center;
+  margin-top: 129px;
+  color: #f5f8fa;
+  padding: 16px 20px;
+  font: 500 14px Montserrat, sans-serif;
+  margin: auto 0;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+/* TestimonialBanner-section */
+.TestimonialBanner {
+  background-image: url(asstes/Synclariti\ Banner-2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+  object-fit: contain;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3%;
+}
+
+.testimonials-heading {
+  color: #ffffff;
+  font: 500 35px Montserrat, sans-serif;
+  text-align: left;
+  /* padding-left: 7%; */
+}
+
+.testimonials-info-wrapper {
+  padding-top: 3%;
+}
+
+.content-details {
+  width: 60%;
+  margin-left: 3rem;
+  float: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 90%;
+  margin-left: 1rem;
+}
+
+.testimonials-description {
+  margin-top: 1rem;
+  float: right;
+  color: #ffffff;
+  font-family: Montserrat-Regular;
+  font-size: 15px;
+  line-height: 1.4;
+  padding: 0px 40px;
+}
+
+.name-heading {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: Montserrat-Regular;
+  margin-top: 2rem;
+  font-weight: bolder;
+  margin-left: 3rem;
+}
+
+.descri-text {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Montserrat-Regular;
+  margin-top: 10px;
+  margin-left: 3rem;
+}
+
+.slideshow-container {
+  max-width: 1500px;
+  position: relative;
+  margin: auto;
+  right: 0%;
+  top: -15%;
+
+  /* border: 2px solid red; */
+}
+
+.mySlides {
+  height: 300px;
+}
+
+.fade {
+  background: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.prev {
+  right: 740px;
+}
+.silder-logo {
+  width: 200px;
+  margin-left: 7rem !important;
+  margin-bottom: 2rem;
+
+  img {
+    width: 200px;
+  }
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Our-values- section  */
+.Our-values {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Our-values-heading {
+  color: black;
+  text-align: center;
+  font: 500 45px Montserrat, sans-serif;
+  font-family: Montserrat-Medium;
+}
+
+.Our-values-heading span {
+  color: rgba(0, 174, 239, 1);
+}
+
+.our-deatils {
+  color: #4e4e4e;
+  text-align: center;
+  margin-top: 30px;
+  font: 398 19px / 30px Montserrat, sans-serif;
+  padding: 0px 50px;
+}
+
+.our-values-wrapper {
+  align-self: center;
+  width: 100%;
+  margin: 100px 0 0 67px;
+  margin-bottom: 10rem;
+}
+
+.inner-values-wrapper {
+  gap: 20px;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.left-section-values {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 27%;
+  margin-left: 0px;
+}
+
+.values-wrapper {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  font-size: 60px;
+  color: #2b3990;
+  font-weight: 500;
+  text-align: left;
+}
+
+.values-title {
+  font-family: Montserrat, sans-serif;
+}
+
+.values-heading {
+  color: #4e4e4e;
+  font: 400 18px Montserrat, sans-serif;
+}
+
+.btn-sunc-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sync-for {
+  cursor: pointer;
+  border: none;
+  border-radius: 100px;
+  background-color: #f05023;
+  align-self: start;
+  margin-top: 129px;
+  color: #f5f8fa;
+  padding: 16px 20px;
+  font: 500 14px Montserrat, sans-serif;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+/* brands-section */
+.brands-section {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 10px;
+  background-color: #e6e7e8;
+  width: 100%;
+  height: auto;
+  padding: 50px 0px;
+}
+
+.brands-title {
+  color: #0e0e0e;
+  font-size: 35px;
+  line-height: 50px;
+  font-family: Montserrat-Medium;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.brand-heading {
+  color: #00aeef;
+  font-size: 30px;
+  line-height: 73px;
+  font-family: Montserrat-Medium;
+  text-align: center;
+}
+
+.brands-img-wrapper {
+  width: 70%;
+  margin-top: 9rem;
+  flex-wrap: wrap;
+  column-gap: 3rem;
+  row-gap: 3rem;
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: auto 0;
+  margin-top: 3rem;
+}
+
+.brands-img-wrapper div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* vision-wrapper-section */
+.vision-wrapper {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(asstes/Synclariti\ Banner-3.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  object-fit: contain;
+  background-size: cover;
+}
+
+.vision-deatils-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  line-height: normal;
+  width: 61%;
+  height: auto;
+  margin-left: 0px;
+  padding: 30px 0;
+}
+
+.vision-heading {
+  color: #ffffff;
+  font: 36px Montserrat, sans-serif;
+}
+
+.vision-heading span {
+  color: rgba(0, 174, 239, 1);
+}
+
+.vision-description {
+  color: #d9d9d9;
+  margin-top: 30px;
+  font: 400 22px/30px Montserrat, sans-serif;
+}
+
+.vision-sync-to {
+  justify-content: center;
+  border-radius: 100px;
+  background-color: #f05023;
+  align-self: start;
+  color: #f5f8fa;
+  padding: 16px 20px;
+  font: 14px Montserrat, sans-serif;
+  margin-top: 2rem;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+/* .vision-img-wrapper {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 39%;
+  margin-left: 20px;
+  background-image: url(asstes/hand-img.png);
+  height: auto;
+  background-position: center center;
+  object-fit: contain;
+} */
+
+/* contact-form-section */
+.contact-form {
+  background-color: #ffffff;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form-wrapper {
+  width: 85%;
+  padding: 75px 0px;
+}
+
+.contact-heading {
+  width: 100%;
+  text-align: center;
+  margin: auto 0;
+  color: #0e0e0e;
+  text-align: center;
+  align-self: stretch;
+  font: 600 21px/34px Montserrat, sans-serif;
+}
+
+.fill-details-wrapper {
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-name {
+  font-family: Montserrat, sans-serif;
+  border-radius: 50px;
+  border-color: rgba(0, 0, 64, 1);
+  border-style: solid;
+  border-width: 1px;
+  margin-top: 40px;
+  width: 437px;
+  max-width: 100%;
+  align-items: start;
+  justify-content: center;
+  padding: 15px 15px;
+  cursor: pointer;
+}
+
+.contact-msg {
+  font-family: Montserrat, sans-serif;
+  border-radius: 30px;
+  border-color: rgba(0, 0, 64, 1);
+  border-style: solid;
+  border-width: 1px;
+  margin-top: 40px;
+  width: 430px;
+  max-width: 100%;
+  align-items: start;
+  padding: 21px 30px 111px;
+}
+
+.contact-grow {
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  border-radius: 100px;
+  background-color: #f05023;
+  margin-top: 30px;
+  color: #f5f8fa;
+  padding: 20px 20px;
+  font: 500 16px Montserrat, sans-serif;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+/* footer-section */
+.footer-section {
+  width: 100%;
+  height: auto;
+  background-color: #000040;
+  padding: 50px 0px;
+}
+
+.white-logo {
+  margin-left: 120px;
+  padding-top: 100px;
+}
+
+.footer-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.heading-text-footer {
+  color: #ffffff;
+  line-height: 60px;
+  font-size: 45px;
+  font-family: Montserrat-Regular;
+  width: 35%;
+  margin-left: 8rem;
+  margin-top: 2rem;
+}
+
+.footer-second-section-wrapper {
+  width: 35%;
+}
+
+.footer-second-section-heading {
+  color: rgba(0, 174, 239, 1);
+  font-family: Montserrat-Regular;
+  font-size: 18px;
+  margin-bottom: 5px;
+  line-height: 150%;
+  font-weight: bolder;
+}
+
+.loaction-wrapper {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.loaction-name {
+  font: 18px/100% Montserrat, sans-serif;
+  color: white;
+  line-height: 150%;
+}
+
+.visible-mobile {
+  display: none;
+}
+
+.vision-deatils-wrapper-mobile {
+  display: none;
+}
+.mobile-device-banner {
+  display: none;
+}
+/** MEDIA QUERY STARTED */
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .visible-mobile {
+    width: 100%;
+    /* background-image: url(asstes/Synclariti\ Banner-09.png); */
+    background-image: url(asstes/Web\ Banner\ 1st.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    object-fit: contain;
+    background-size: contain;
+    display: block;
+    height: 500px;
+    margin-top: -160px;
+  }
+
+  .vision-deatils-wrapper-mobile {
+    display: block;
+    width: 100%;
+    height: 150px;
+    background-image: url(asstes/Synclariti\ Banner-3.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    object-fit: contain;
+    background-size: cover;
+    clear: both;
+  }
+  .mobile-device-banner {
+    background-image: url(asstes/Synclariti\ Banner-2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    object-fit: contain;
+    background-size: cover;
+    clear: both;
+    display: block;
+    width: 100%;
+    height: 550px;
+  }
+  .TestimonialBanner {
+    height: 119vh;
+    background-image: none;
+    background-color: #0e1036;
+  }
+  .vision-wrapper {
+    background-image: none;
+    background-color: #0e1036;
+  }
+
+  .sync-button {
+    padding: 16px 20px;
+    font: 494 10px Montserrat, sans-serif;
+  }
+  .prev {
+    left: 0px;
+  }
+
+  .logo-img {
+    aspect-ratio: 4.17;
+    margin-left: 7rem;
+  }
+
+  .custom-conatiner {
+    padding: 0px 0px;
+  }
+
+  .first-section-banner {
+    width: 100%;
+    width: 100% !important;
+    height: 475px;
+    background-image: none;
+    background-color: #f2f2f2;
+  }
+
+  .hero-info {
+    width: 75%;
+    padding-top: 9%;
+    padding-left: 25px;
+    padding-right: 25px;
+    gap: 1rem;
+  }
+
+  .hero-heading {
+    font-size: 21px;
+    color: #0e0e0e;
+    font-family: Montserrat-Medium;
+    margin-top: 5rem;
+  }
+
+  .hero-heading span {
+    color: #00aeef;
+  }
+
+  .hero-desc {
+    color: #4e4e4e;
+    font-family: Montserrat-Regular;
+    font-size: 14px;
+    min-width: auto;
+  }
+
+  .solution-section-wrapper {
+    padding-top: 2rem;
+    margin: 0 30px;
+    padding: 1rem 0rem;
+  }
+
+  .soultion-heading {
+    font-size: 21px;
+    padding: 0rem 2rem;
+    color: #0e0e0e;
+    font-family: Montserrat-Medium;
+  }
+
+  .solution-info {
+    font-size: 21px;
+    font-family: Montserrat-Medium;
+    padding: 0rem 0rem;
+  }
+
+  .solution-multi-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 9rem;
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+  }
+  .solution-multi-wrapper div {
+    height: 80px;
+  }
+  .sync-to {
+    font: 505 20px Montserrat, sans-serif;
+    margin-top: 4rem;
+  }
+
+  .testimonials-heading {
+    color: #ffffff;
+    font: 500 21px Montserrat, sans-serif;
+    text-align: left;
+    padding-left: 25px;
+  }
+
+  .info-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    /* padding-left: 25px; */
+  }
+
+  .name-heading {
+    color: #ffffff;
+    font-size: 14px;
+    font-family: Montserrat-Regular;
+    margin-top: 2rem;
+    font-weight: bolder;
+  }
+  .silder-logo {
+    width: 200px;
+    margin-left: 4rem !important;
+    margin-bottom: 2rem;
+  }
+
+  .descri-text {
+    color: #ffffff;
+    font-size: 12px;
+    font-family: Montserrat-Regular;
+    margin-top: 10px;
+  }
+
+  .content-details {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+    min-width: 300px;
+    padding: 0px 27px;
+  }
+
+  .values-heading {
+    color: #4e4e4e;
+    font: 394 14px Montserrat, sans-serif;
+  }
+
+  .values-wrapper {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    font-size: 43px;
+    color: #2b3990;
+    font-weight: 500;
+    text-align: left;
+  }
+  .Our-values {
+    padding-top: 1rem;
+  }
+  .Our-values-heading {
+    font: 500 21px Montserrat, sans-serif;
+    font-family: Montserrat-Medium;
+  }
+
+  .our-values-wrapper {
+    align-self: center;
+    width: 100% !important;
+    margin: 0px !important;
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+    padding: 0px 25px !important;
+  }
+
+  .btn-sunc-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sync-for {
+    margin-top: 20px;
+    font: 506 18px Montserrat, sans-serif;
+  }
+
+  .brands-img-wrapper {
+    margin-top: 2rem;
+    row-gap: 1rem;
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    padding: 0px 25px 25px 25px;
+  }
+
+  .brands-img-wrapper div {
+    img {
+      width: 100px;
+    }
+  }
+  .brands-img-wrapper .tata-logo {
+    img {
+      width: 120px !important;
+    }
+  }
+  .brands-img-wrapper .mobile-size {
+    img {
+      width: 70px;
+    }
+  }
+
+  .brand-heading {
+    color: #00aeef;
+    font-size: 26px;
+    line-height: 30px;
+    font-family: Montserrat-Medium;
+    text-align: center;
+  }
+
+  .our-deatils {
+    color: #4e4e4e;
+    text-align: center;
+    margin-top: 30px;
+    margin-top: 30px;
+    font: 400 14px / 20px Montserrat, sans-serif;
+    width: 100%;
+  }
+
+  .vision-heading {
+    color: #ffffff;
+    font: 21px Montserrat, sans-serif;
+  }
+  .vision-description {
+    color: #d9d9d9;
+    margin-top: 30px;
+    font: 400 14px / 20px Montserrat, sans-serif;
+  }
+  .vision-heading span {
+    color: rgba(0, 174, 239, 1);
+  }
+
+  .vision-deatils-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    padding: 30px 25px;
+  }
+
+  .contact-name {
+    margin-top: 30px;
+    width: 320px;
+    max-width: 100%;
+    align-items: start;
+    justify-content: center;
+    padding: 15px 15px;
+    cursor: pointer;
+  }
+
+  .contact-msg {
+    margin-top: 30px;
+    width: 320px;
+    max-width: 100%;
+    align-items: start;
+    padding: 15px 15px 100px;
+  }
+
+  .contact-heading {
+    text-align: center;
+    margin: auto 0;
+    color: #0e0e0e;
+    text-align: center;
+    align-self: stretch;
+    font: 500 21px / 27px Montserrat, sans-serif;
+  }
+
+  .contact-grow {
+    font: 500 12px Montserrat, sans-serif;
+  }
+
+  .footer-section {
+    width: 100%;
+    height: auto !important;
+    background-color: #000040;
+  }
+
+  .footer-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 3rem;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .white-logo {
+    margin-left: 0px;
+    padding-top: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .footer-second-section-heading {
+    font-size: 18px;
+    margin-bottom: 5px;
+    line-height: 25px;
+    margin-top: 21px;
+    font-weight: bolder;
+  }
+
+  .heading-text-footer {
+    color: #ffffff;
+    line-height: 25px;
+    font-size: 21px;
+    font-family: Montserrat-Regular;
+    width: 100%;
+    margin-left: 0rem;
+  }
+
+  .footer-second-section-wrapper {
+    width: 100%;
+  }
+
+  .loaction-name {
+    font: 14px / 100% Montserrat, sans-serif;
+    color: white;
+    line-height: 1;
+  }
+  .testimonials-info-wrapper {
+    padding-top: 0%;
+  }
+  .testimonials-description {
+    margin-top: 0rem;
+    float: right;
+    color: #ffffff;
+    font-family: Montserrat-Regular;
+    font-size: 14px;
+  }
+  .loaction-wrapper {
+    padding-bottom: 2rem;
+  }
+
+  .TestimonialBanner {
+    background-size: cover !important;
+    padding-top: 20px;
+  }
+
+  .slideshow-container {
+    top: 0px !important;
+    margin-top: 20px !important;
+  }
+
+  .orange-icon {
+    width: 50px;
+  }
+
+  .logo-img {
+    margin-left: 1rem;
+    width: 200px;
+    margin-top: 0rem;
+  }
+
+  .menu-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .sync-button {
+    align-self: center;
+    margin-top: 0;
+    margin-right: 25px;
+  }
+
+  .cross-img-container-position {
+    position: relative;
+  }
+
+  .cross-img-position {
+    position: absolute;
+    right: 0px;
+    margin-top: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .hero-heading {
+    font-size: 18px;
+    color: #0e0e0e;
+    font-family: Montserrat-Medium;
+    margin-top: 5rem;
+    width: 258px;
+  }
+  .visible-mobile {
+    width: 100%;
+    background-image: url(asstes/Synclariti\ Banner-09.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    object-fit: contain;
+    background-size: contain;
+    display: block;
+    height: 630px;
+    margin-top: -160px;
+  }
+  .footer-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 3rem;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .footer-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-second-section-heading {
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .loaction-name {
+    font: 15px / 100% Montserrat, sans-serif;
+    color: white;
+    line-height: 107%;
+  }
+  .heading-text-footer {
+    color: #ffffff;
+    line-height: 29px;
+    font-size: 29px;
+    width: 76%;
+    margin-left: 0rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 350px) {
+  .logo-img {
+    margin-left: 1rem;
+    width: 150px;
+    margin-top: 0rem;
+  }
+
+  .sync-button {
+    padding: 10px;
+    margin-right: 15px;
+  }
+
+  .TestimonialBanner {
+    background-size: auto !important;
+  }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 360px) {
+  .logo-img {
+    margin-left: 1rem;
+    width: 150px;
+    margin-top: 0rem;
+  }
+}
+
+@media only screen and (min-width: 361px) and (max-width: 400px) {
+  .logo-img {
+    margin-left: 1rem;
+    width: 170px;
+    margin-top: 0rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1900px) {
+  .solution-multi-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 0rem;
+  }
+  .brands-img-wrapper {
+    /* height: 337px; */
+    width: 100%;
+    margin-top: 9rem;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto 0;
+    margin-top: 3rem;
+  }
+  .vision-heading {
+    color: #ffffff;
+    font: 36px Montserrat, sans-serif;
+    /* margin-left: -23rem !important; */
+  }
+  .vision-description {
+    color: #d9d9d9;
+    margin-top: 30px;
+    font: 400 18px / 30px Montserrat, sans-serif;
+  }
+  .heading-text-footer {
+    color: #ffffff;
+    line-height: 36px;
+    font-size: 31px;
+    font-family: Montserrat-Regular;
+    width: 35%;
+    margin-left: 120px;
+    margin-top: 2rem;
+  }
+  .footer-second-section-wrapper {
+    width: 40%;
+  }
+  .loaction-name {
+    font: 15px / 100% Montserrat, sans-serif;
+    color: white;
+    line-height: 150%;
+  }
+  .white-logo {
+    margin-left: 120px;
+    padding-top: 22px;
+  }
+  .Our-values-heading {
+    color: black;
+    text-align: center;
+    font: 500 35px Montserrat, sans-serif;
+    font-family: Montserrat-Medium;
+    margin-top: 15px;
+  }
+  .our-deatils {
+    color: #4e4e4e;
+    text-align: center;
+    margin-top: 30px;
+    font: 398 19px / 30px Montserrat, sans-serif;
+    /* width: 1347px; */
+    padding: 0px 0px;
+  }
+  .hero-heading {
+    font-size: 36px;
+    color: #0e0e0e;
+    font-family: Montserrat-Medium;
+    width: 550px;
+  }
+  .visible-mobile {
+    display: none;
+  }
+  .first-section-banner {
+    width: 100%;
+    /* background-image: url(asstes/Synclariti\ Banner-09.png); */
+    background-image: url(asstes/Web\ Banner\ 1st.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+  }
+  .TestimonialBanner {
+    background-image: url(asstes/Synclariti\ Banner-2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    object-fit: contain;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+  }
+}
+@media only screen and (min-width: 1900px) and (max-width: 2600px) {
+  .hero-heading {
+    font-size: 60px;
+  }
+  .hero-desc {
+    font-size: 26px;
+    min-width: 1030px;
+  }
+  .hero-info {
+    padding-top: 16%;
+  }
+  .soultion-heading {
+    font-size: 60px;
+  }
+  .solution-info {
+    font-size: 40px;
+  }
+  .solution-multi-wrapper {
+    gap: 7rem;
+  }
+  .solution-multi-wrapper div {
+    img {
+      height: 100%;
+    }
+  }
+  .sync-to {
+    cursor: pointer;
+    border: none;
+    border-radius: 100px;
+    background-color: #f05023;
+    align-self: center;
+    margin-top: 129px;
+    color: #f5f8fa;
+    padding: 22px 40px;
+    font: 500 22px Montserrat, sans-serif;
+    margin: auto 0;
+  }
+  .testimonials-heading {
+    color: #ffffff;
+    font: 500 60px Montserrat, sans-serif;
+    text-align: left;
+  }
+  .testimonials-description {
+    font-size: 28px;
+  }
+  .name-heading {
+    font-size: 22px;
+  }
+  .descri-text {
+    font-size: 18px;
+  }
+  .Our-values-heading {
+    font: 500 60px Montserrat, sans-serif;
+  }
+  .our-deatils {
+    font: 400 30px / 30px Montserrat, sans-serif;
+    padding: 10px 226px;
+  }
+  .values-heading {
+    color: #4e4e4e;
+    font: 400 26px Montserrat, sans-serif;
+  }
+  .sync-for {
+    padding: 22px 30px;
+    font: 500 18px Montserrat, sans-serif;
+  }
+  .brands-title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .brand-heading {
+    font-size: 50px;
+    line-height: 90px;
+  }
+  .vision-heading {
+    font: 60px Montserrat, sans-serif;
+  }
+  .vision-description {
+    color: #d9d9d9;
+    margin-top: 30px;
+    font: 400 35px / 40px Montserrat, sans-serif;
+  }
+  .vision-sync-to {
+    padding: 22px 30px;
+    font: 18px Montserrat, sans-serif;
+  }
+  .vision-wrapper {
+    height: 600px;
+  }
+  .contact-heading {
+    font: 500 50px / 50px Montserrat, sans-serif;
+  }
+  .contact-name {
+    padding: 22px 23px;
+    font-size: 22px;
+  }
+  .contact-msg {
+    width: 435px;
+    padding: 30px 40px 111px;
+    font-size: 24px;
+  }
+  .contact-grow {
+    padding: 23px 40px;
+    font: 500 18px Montserrat, sans-serif;
+  }
+  .heading-text-footer {
+    color: #ffffff;
+    line-height: 60px;
+    font-size: 60px;
+    width: 30%;
+  }
+  .footer-second-section-heading {
+    font-size: 30px;
+  }
+  .loaction-name {
+    font: 20px / 100% Montserrat, sans-serif;
+  }
+}
