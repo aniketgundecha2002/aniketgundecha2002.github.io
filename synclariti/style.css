@@ -1,13 +1,15 @@
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 body {
   width: 100%;
-  padding: 0;
+  height: auto;
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  position: relative;
 }
 
 @font-face {
@@ -33,6 +35,7 @@ body {
   z-index: 99999;
   width: 100%;
   height: 100px;
+  margin: auto 0;
 }
 
 .scrolled {
@@ -44,7 +47,7 @@ body {
 
 @media (max-width: 991px) {
   .menu-wrapper {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 }
 
@@ -94,18 +97,17 @@ body {
   }
 }
 
-.custom-conatiner {
+/* .custom-conatiner {
   padding: 0px 120px;
-  /* margin: 0px 30px; */
-}
+} */
 a {
   text-decoration: none;
 }
 /* first-section-banner */
 .first-section-banner {
   width: 100%;
-  /* background-image: url(asstes/Synclariti\ Banner-09.png); */
-  background-image: url(asstes/Web\ Banner\ 1st.jpg);
+  /* background-image: url(assets/Synclariti\ Banner-09.png); */
+  background-image: url(assets/Web\ Banner\ 1st.jpg);
 
   background-repeat: no-repeat;
   background-position: center center;
@@ -117,10 +119,11 @@ a {
 
 .hero-info {
   width: 40%;
-  padding-top: 18.5%;
+  padding-top: 14%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  padding-left: 5rem;
 }
 
 .hero-heading {
@@ -145,6 +148,7 @@ a {
   justify-content: center;
   align-items: center;
   background-color: #000039;
+  padding-top: 70px;
 }
 
 .solution-section-wrapper {
@@ -214,7 +218,7 @@ a {
 
 /* TestimonialBanner-section */
 .TestimonialBanner {
-  background-image: url(asstes/Synclariti\ Banner-2.png);
+  background-image: url(assets/Synclariti\ Banner-2.png);
   background-repeat: no-repeat;
   background-position: center center;
   width: 100%;
@@ -230,7 +234,7 @@ a {
   color: #ffffff;
   font: 500 35px Montserrat, sans-serif;
   text-align: left;
-  /* padding-left: 7%; */
+  padding-left: 5rem;
 }
 
 .testimonials-info-wrapper {
@@ -262,7 +266,7 @@ a {
   font-family: Montserrat-Regular;
   font-size: 15px;
   line-height: 1.4;
-  padding: 0px 40px;
+  /* padding: 0px 40px; */
 }
 
 .name-heading {
@@ -270,62 +274,15 @@ a {
   font-size: 18px;
   font-family: Montserrat-Regular;
   margin-top: 2rem;
+  margin-bottom: 0;
   font-weight: bolder;
-  margin-left: 3rem;
 }
 
 .descri-text {
   color: #ffffff;
   font-size: 14px;
   font-family: Montserrat-Regular;
-  margin-top: 10px;
-  margin-left: 3rem;
-}
-
-.slideshow-container {
-  max-width: 1500px;
-  position: relative;
-  margin: auto;
-  right: 0%;
-  top: -15%;
-
-  /* border: 2px solid red; */
-}
-
-.mySlides {
-  height: 300px;
-}
-
-.fade {
-  background: none;
-}
-
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-.prev {
-  right: 740px;
-}
-.silder-logo {
-  width: 200px;
-  margin-left: 7rem !important;
-  margin-bottom: 2rem;
-
-  img {
-    width: 200px;
-  }
+  margin-top: 5px;
 }
 
 /* Position the "next button" to the right */
@@ -336,6 +293,7 @@ a {
 
 /* Our-values- section  */
 .Our-values {
+  background-color: #ffffff;
   width: 100%;
   text-align: center;
   display: flex;
@@ -482,7 +440,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(asstes/Synclariti\ Banner-3.png);
+  background-image: url(assets/Synclariti\ Banner-3.png);
   background-repeat: no-repeat;
   background-position: center center;
   object-fit: contain;
@@ -499,6 +457,7 @@ a {
   height: auto;
   margin-left: 0px;
   padding: 30px 0;
+  margin-left: 5rem;
 }
 
 .vision-heading {
@@ -538,7 +497,7 @@ a {
   line-height: normal;
   width: 39%;
   margin-left: 20px;
-  background-image: url(asstes/hand-img.png);
+  background-image: url(assets/hand-img.png);
   height: auto;
   background-position: center center;
   object-fit: contain;
@@ -627,8 +586,8 @@ a {
 }
 
 .white-logo {
-  margin-left: 120px;
-  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-left: 3rem;
 }
 
 .footer-content-wrapper {
@@ -642,13 +601,12 @@ a {
   line-height: 60px;
   font-size: 45px;
   font-family: Montserrat-Regular;
-  width: 35%;
-  margin-left: 8rem;
-  margin-top: 2rem;
+  margin-left: 3rem;
 }
 
 .footer-second-section-wrapper {
-  width: 35%;
+  /* width: 50%; */
+  margin-left: 3rem;
 }
 
 .footer-second-section-heading {
@@ -683,13 +641,22 @@ a {
 .mobile-device-banner {
   display: none;
 }
+.testimonial-img {
+  width: 200px;
+}
+button.carousel-control-prev {
+  margin-left: -90px;
+}
+button.carousel-control-next {
+  margin-right: -90px;
+}
 /** MEDIA QUERY STARTED */
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .visible-mobile {
     width: 100%;
-    /* background-image: url(asstes/Synclariti\ Banner-09.png); */
-    background-image: url(asstes/Web\ Banner\ 1st.jpg);
+    /* background-image: url(assets/Synclariti\ Banner-09.png); */
+    background-image: url(assets/Web\ Banner\ 1st.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
@@ -703,8 +670,8 @@ a {
   .vision-deatils-wrapper-mobile {
     display: block;
     width: 100%;
-    height: 150px;
-    background-image: url(asstes/Synclariti\ Banner-3.png);
+    height: 500px;
+    background-image: url(assets/Synclariti\ Banner-3.png);
     background-repeat: no-repeat;
     background-position: center right;
     object-fit: contain;
@@ -712,7 +679,7 @@ a {
     clear: both;
   }
   .mobile-device-banner {
-    background-image: url(asstes/Synclariti\ Banner-2.png);
+    background-image: url(assets/Synclariti\ Banner-2.png);
     background-repeat: no-repeat;
     background-position: center center;
     object-fit: contain;
@@ -723,7 +690,7 @@ a {
     height: 550px;
   }
   .TestimonialBanner {
-    height: 119vh;
+    height: 650px;
     background-image: none;
     background-color: #0e1036;
   }
@@ -750,11 +717,11 @@ a {
   }
 
   .first-section-banner {
-    width: 100%;
     width: 100% !important;
-    height: 475px;
+    height: 509px;
     background-image: none;
     background-color: #f2f2f2;
+    padding: 0px;
   }
 
   .hero-info {
@@ -834,9 +801,10 @@ a {
     align-items: center;
     gap: 1rem;
     width: 100%;
-    /* padding-left: 25px; */
   }
-
+  .carousel-inner {
+    margin-top: 2rem;
+  }
   .name-heading {
     color: #ffffff;
     font-size: 14px;
@@ -916,7 +884,7 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    padding: 0px 25px 25px 25px;
+    padding: 0px 25px 25px 15px;
   }
 
   .brands-img-wrapper div {
@@ -1017,19 +985,14 @@ a {
     flex-direction: column;
     justify-content: space-between;
     padding-top: 3rem;
-    padding-left: 25px;
-    padding-right: 25px;
   }
 
   .white-logo {
-    margin-left: 0px;
-    padding-top: 40px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-bottom: 0px;
   }
 
   .footer-second-section-heading {
-    font-size: 18px;
+    font-size: 17px;
     margin-bottom: 5px;
     line-height: 25px;
     margin-top: 21px;
@@ -1041,12 +1004,11 @@ a {
     line-height: 25px;
     font-size: 21px;
     font-family: Montserrat-Regular;
-    width: 100%;
-    margin-left: 0rem;
+    margin-top: 2rem;
   }
 
   .footer-second-section-wrapper {
-    width: 100%;
+    /* width: 50%; */
   }
 
   .loaction-name {
@@ -1058,11 +1020,15 @@ a {
     padding-top: 0%;
   }
   .testimonials-description {
-    margin-top: 0rem;
-    float: right;
-    color: #ffffff;
-    font-family: Montserrat-Regular;
-    font-size: 14px;
+  }
+  .carousel-inner {
+    padding: 0px 50px;
+  }
+  button.carousel-control-prev {
+    margin-left: 0px;
+  }
+  button.carousel-control-next {
+    margin-right: 0px;
   }
   .loaction-wrapper {
     padding-bottom: 2rem;
@@ -1098,7 +1064,6 @@ a {
   .sync-button {
     align-self: center;
     margin-top: 0;
-    margin-right: 25px;
   }
 
   .cross-img-container-position {
@@ -1124,26 +1089,34 @@ a {
     margin-top: 5rem;
     width: 258px;
   }
-  .visible-mobile {
+  .brands-img-wrapper {
+    column-gap: 3rem;
+    margin: auto 0;
+    margin-top: 2rem;
+    row-gap: 1rem;
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
-    background-image: url(asstes/Synclariti\ Banner-09.png);
+    padding: 0px 25px 25px 25px;
+  }
+  .vision-heading {
+    color: #ffffff;
+    font: 33px Montserrat, sans-serif;
+  }
+  .visible-mobile {
+    background-image: url(assets/Synclariti\ Banner-09.png);
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
     object-fit: contain;
-    background-size: contain;
+    background-size: cover;
     display: block;
-    height: 630px;
+    height: 400px;
     margin-top: -160px;
+    display: none;
   }
-  .footer-content-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 3rem;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
+
   .footer-content-wrapper {
     display: flex;
     flex-direction: row;
@@ -1162,7 +1135,12 @@ a {
     color: #ffffff;
     line-height: 29px;
     font-size: 29px;
-    width: 76%;
+    margin-left: 2rem;
+  }
+  .sync-button {
+    margin-right: 3rem !important;
+  }
+  .footer-second-section-wrapper {
     margin-left: 0rem;
   }
 }
@@ -1201,6 +1179,12 @@ a {
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1900px) {
+  .logo-img {
+    margin-left: 5rem;
+  }
+  .sync-button {
+    margin-right: 3rem;
+  }
   .solution-multi-wrapper {
     display: flex;
     justify-content: center;
@@ -1209,7 +1193,6 @@ a {
     gap: 0rem;
   }
   .brands-img-wrapper {
-    /* height: 337px; */
     width: 100%;
     margin-top: 9rem;
     flex-wrap: wrap;
@@ -1224,24 +1207,24 @@ a {
   .vision-heading {
     color: #ffffff;
     font: 36px Montserrat, sans-serif;
-    /* margin-left: -23rem !important; */
   }
   .vision-description {
     color: #d9d9d9;
     margin-top: 30px;
     font: 400 18px / 30px Montserrat, sans-serif;
   }
+  button.carousel-control-next {
+    margin-right: -44px;
+  }
   .heading-text-footer {
     color: #ffffff;
-    line-height: 36px;
-    font-size: 31px;
+    line-height: 50px;
+    font-size: 45px;
     font-family: Montserrat-Regular;
-    width: 35%;
-    margin-left: 120px;
-    margin-top: 2rem;
+    margin-left: 3rem;
   }
   .footer-second-section-wrapper {
-    width: 40%;
+    margin-right: 3rem;
   }
   .loaction-name {
     font: 15px / 100% Montserrat, sans-serif;
@@ -1249,7 +1232,7 @@ a {
     line-height: 150%;
   }
   .white-logo {
-    margin-left: 120px;
+    margin-left: 3rem;
     padding-top: 22px;
   }
   .Our-values-heading {
@@ -1264,8 +1247,7 @@ a {
     text-align: center;
     margin-top: 30px;
     font: 398 19px / 30px Montserrat, sans-serif;
-    /* width: 1347px; */
-    padding: 0px 0px;
+    padding: 0rem 10rem;
   }
   .hero-heading {
     font-size: 36px;
@@ -1278,8 +1260,8 @@ a {
   }
   .first-section-banner {
     width: 100%;
-    /* background-image: url(asstes/Synclariti\ Banner-09.png); */
-    background-image: url(asstes/Web\ Banner\ 1st.jpg);
+    /* background-image: url(assets/Synclariti\ Banner-09.png); */
+    background-image: url(assets/Web\ Banner\ 1st.jpg);
 
     background-repeat: no-repeat;
     background-position: center center;
@@ -1288,7 +1270,7 @@ a {
     background-size: cover;
   }
   .TestimonialBanner {
-    background-image: url(asstes/Synclariti\ Banner-2.png);
+    background-image: url(assets/Synclariti\ Banner-2.png);
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
@@ -1299,8 +1281,18 @@ a {
     flex-direction: column;
     padding-top: 3%;
   }
+  .hero-info {
+    padding-top: 11% !important;
+  }
 }
 @media only screen and (min-width: 1900px) and (max-width: 2600px) {
+  .logo-img {
+    margin-left: 5rem;
+  }
+  .sync-button {
+    margin-right: 5rem;
+  }
+
   .hero-heading {
     font-size: 60px;
   }
@@ -1309,7 +1301,7 @@ a {
     min-width: 1030px;
   }
   .hero-info {
-    padding-top: 16%;
+    padding-top: 13%;
   }
   .soultion-heading {
     font-size: 60px;
@@ -1374,6 +1366,9 @@ a {
     font-size: 50px;
     line-height: 90px;
   }
+  .our-deatils {
+    padding: 0rem 10rem;
+  }
   .vision-heading {
     font: 60px Montserrat, sans-serif;
   }
@@ -1409,7 +1404,6 @@ a {
     color: #ffffff;
     line-height: 60px;
     font-size: 60px;
-    width: 30%;
   }
   .footer-second-section-heading {
     font-size: 30px;
